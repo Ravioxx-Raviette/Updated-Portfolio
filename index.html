@@ -14,6 +14,40 @@
 <body>
   <a class="skip-link" href="#about">Skip to content</a>
   <div class="noise" aria-hidden="true"></div>
+  <svg class="graphic-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="phantom-mask" viewBox="0 0 280 160">
+        <path fill="currentColor" fill-rule="evenodd" d="M8 18 96 42 140 16 184 42 272 18 246 108 188 142 140 112 92 142 34 108ZM45 62 100 73 113 100 65 92ZM167 100 180 73 235 62 215 92Z"/>
+        <path d="m20 13 72 19M188 32l72-19M101 148l39-24 39 24" fill="none" stroke="currentColor" stroke-width="3"/>
+      </symbol>
+      <symbol id="ink-star" viewBox="0 0 100 100">
+        <path fill="currentColor" d="m51 0 9 31 24-16-13 27 29 9-31 9 16 25-28-14-9 29-9-31-25 16 15-28L0 48l31-9-16-25 28 15Z"/>
+      </symbol>
+      <symbol id="ink-slash" viewBox="0 0 160 18">
+        <path fill="currentColor" d="m0 12 142-12-14 6 32-1-21 9L14 18l13-5Z"/>
+      </symbol>
+      <symbol id="selection-brackets" viewBox="0 0 100 40">
+        <path d="M12 2H2v10M88 2h10v10M2 28v10h10M98 28v10H88" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div id="intro-cutscene" class="intro-cutscene" role="dialog" aria-modal="true" aria-labelledby="intro-title" hidden>
+    <div class="intro-panel intro-panel-left" aria-hidden="true"><div class="intro-panel-fill"></div></div>
+    <div class="intro-panel intro-panel-right" aria-hidden="true"><div class="intro-panel-fill"></div></div>
+    <svg class="intro-mask decorative-graphic" viewBox="0 0 280 160" aria-hidden="true" focusable="false"><use href="#phantom-mask"/></svg>
+    <div class="intro-card">
+      <p class="intro-eyebrow">A CALLING CARD FROM</p>
+      <h2 id="intro-title">RAVIOXX<span class="sr-only"> — portfolio introduction</span></h2>
+      <p class="intro-name">DAN JUSTINE RIVERO</p>
+      <svg class="intro-slash decorative-graphic" viewBox="0 0 160 18" aria-hidden="true" focusable="false"><use href="#ink-slash"/></svg>
+      <p class="intro-tagline">A curious mind.<br>A programmer in progress.</p>
+      <span class="intro-stamp" aria-hidden="true">THE<br>MAGICIAN</span>
+      <svg class="intro-burst decorative-graphic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#ink-star"/></svg>
+      <span class="intro-file" aria-hidden="true">ARCANA I <span>///</span> PERSONNEL FILE 001</span>
+    </div>
+    <button class="intro-skip" type="button">SKIP INTRO <span aria-hidden="true">↗</span></button>
+  </div>
 
   <header class="site-header">
     <a class="wordmark" href="#home" aria-label="Ravioxx home"><span class="brand-mark">R<span>★</span></span> RAVIOXX<span class="wordmark-dot">.</span></a>
@@ -22,6 +56,7 @@
       <a href="#skills"><span>02</span> SKILLS</a>
       <a href="#projects"><span>03</span> PROJECTS</a>
       <a href="#contact"><span>04</span> CONTACT <span aria-hidden="true">↗</span></a>
+      <span class="nav-selector" aria-hidden="true" hidden><svg viewBox="0 0 100 40" preserveAspectRatio="none" focusable="false"><use href="#selection-brackets"/></svg></span>
     </nav>
   </header>
 
@@ -32,7 +67,7 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> A STUDENT WITH SOMETHING TO BUILD</p>
           <p class="hero-intro">You can call me</p>
-          <h1 id="hero-title"><span class="name-first">DAN</span><span class="name-last">JUSTINE<span class="name-star" aria-hidden="true">★</span></span></h1>
+          <h1 id="hero-title" tabindex="-1"><span class="name-first">DAN</span><span class="name-last">JUSTINE<span class="name-star" aria-hidden="true">★</span></span></h1>
           <p class="hero-description">Computer science student. Future programmer.<br>Turning curiosity into code, one project at a time.</p>
           <div class="hero-actions">
             <a href="#projects" class="cut-button">EXPLORE THE HEISTS <span aria-hidden="true">↘</span></a>
@@ -41,7 +76,8 @@
         </div>
 
         <div class="hero-art">
-          <span class="art-star" aria-hidden="true">✦</span>
+          <svg class="hero-mask decorative-graphic" viewBox="0 0 280 160" aria-hidden="true" focusable="false"><use href="#phantom-mask"/></svg>
+          <svg class="art-star decorative-graphic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#ink-star"/></svg>
           <div class="card-back" aria-hidden="true"></div>
           <figure class="identity-card">
             <div class="card-heading"><span>THE PERSON BEHIND THE CODE</span><span aria-hidden="true">↗</span></div>
@@ -65,7 +101,7 @@
     <section id="about" class="about-section section-shell" aria-labelledby="about-title">
       <div class="section-heading">
         <p class="section-kicker"><span>01 / INTEL</span> GET TO KNOW ME</p>
-        <h2 id="about-title">BEHIND <span class="paper-word">THE MASK.</span></h2>
+        <h2 id="about-title">BEHIND <span class="paper-word">THE MASK.</span><svg class="heading-slash decorative-graphic" viewBox="0 0 160 18" aria-hidden="true" focusable="false"><use href="#ink-slash"/></svg></h2>
       </div>
       <div class="about-layout">
         <div class="about-story">
@@ -91,7 +127,7 @@
 
     <section id="skills" class="skills-section section-shell" aria-labelledby="skills-title">
       <div class="section-heading skills-heading">
-        <div><p class="section-kicker"><span>02 / ARSENAL</span> TOOLS OF THE TRADE</p><h2 id="skills-title">MY <span class="outline-word">SKILL SET.</span></h2></div>
+        <div><p class="section-kicker"><span>02 / ARSENAL</span> TOOLS OF THE TRADE</p><h2 id="skills-title">MY <span class="outline-word">SKILL SET.</span><svg class="heading-spark decorative-graphic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#ink-star"/></svg></h2></div>
         <p class="section-note">The tools I'm learning.<br>The skills I'm leveling up.</p>
       </div>
       <div class="skill-grid">
@@ -103,7 +139,8 @@
       <p class="skill-disclaimer">Self-assessed levels. Always room for the next upgrade.</p>
     </section>
 
-    <div class="tape-divider" aria-hidden="true">
+    <div class="ticker">
+    <div id="portfolio-ticker" class="tape-divider" aria-hidden="true">
       <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
       <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
       <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
@@ -111,9 +148,11 @@
       <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
       <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
     </div>
+    <button class="ticker-toggle" type="button" aria-controls="portfolio-ticker" aria-pressed="false" hidden>Pause ticker</button>
+    </div>
 
     <section id="projects" class="projects-section section-shell" aria-labelledby="projects-title">
-      <div class="section-heading projects-heading"><div><p class="section-kicker"><span>03 / OPERATION FILES</span> IDEAS IN ACTION</p><h2 id="projects-title">THE <span class="paper-word">HEISTS.</span></h2></div><p class="section-note">Experiments. Lessons. Finished projects.<br>Here's what I've been working on.</p></div>
+      <div class="section-heading projects-heading"><div><p class="section-kicker"><span>03 / OPERATION FILES</span> IDEAS IN ACTION</p><h2 id="projects-title">THE <span class="paper-word">HEISTS.</span><svg class="heading-slash decorative-graphic" viewBox="0 0 160 18" aria-hidden="true" focusable="false"><use href="#ink-slash"/></svg></h2></div><p class="section-note">Experiments. Lessons. Finished projects.<br>Here's what I've been working on.</p></div>
       <div class="project-grid">
         <article class="project-card project-featured">
           <div class="project-visual visual-web" aria-hidden="true"><span class="visual-label">OPERATION 001</span><div class="browser-art"><div class="browser-bar"><span>● ● ●</span><span>localhost / first-build</span></div><div class="browser-body"><span class="code-line">&lt;?php</span><span class="code-main">HELLO,<br><em>WORLD.</em></span><span class="code-line">// every journey starts somewhere</span></div></div><span class="visual-corner">WEB DEVELOPMENT ↗</span></div>
@@ -138,11 +177,344 @@
     <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="contact-inner">
         <div class="contact-title-wrap"><p class="section-kicker"><span>04 / THE NEXT CHAPTER</span> LET'S CONNECT</p><h2 id="contact-title">GOT AN IDEA?<br><span>LET'S TALK.</span><span class="contact-star" aria-hidden="true">★</span></h2><p>A question, a project, or just a hello.<br>My inbox is open.</p></div>
-        <div class="calling-card"><span class="calling-label">THIS IS YOUR CALLING CARD.</span><span class="calling-star" aria-hidden="true">✦</span><h3>MAKE<br>CONTACT.</h3><a class="email-link" href="mailto:riverodanjustine@gmail.com">riverodanjustine@gmail.com <span aria-hidden="true">↗</span></a><a class="phone-link" href="tel:+639613966038">+63 961 396 6038 <span aria-hidden="true">↗</span></a><span class="calling-signature">YOURS TRULY, RAVIOXX.</span></div>
+        <div class="calling-card"><span class="calling-label">THIS IS YOUR CALLING CARD.</span><svg class="calling-star decorative-graphic" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#ink-star"/></svg><h3>MAKE<br>CONTACT.</h3><a class="email-link" href="mailto:riverodanjustine@gmail.com">riverodanjustine@gmail.com <span aria-hidden="true">↗</span></a><a class="phone-link" href="tel:+639613966038">+63 961 396 6038 <span aria-hidden="true">↗</span></a><span class="calling-signature">YOURS TRULY, RAVIOXX.</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><span>© 2026 RAVIOXX</span><span>BUILT WITH CURIOSITY. INSPIRED BY PERSONA 5.</span><a href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
+  <footer class="site-footer"><span>© 2026 RAVIOXX</span><span>BUILT WITH CURIOSITY. INSPIRED BY PERSONA 5.</span><button class="intro-replay" type="button" aria-controls="intro-cutscene" hidden>REPLAY INTRO <span aria-hidden="true">↻</span></button><a href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
+  <script>
+    (() => {
+      const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const ticker = document.querySelector('.ticker');
+      const toggle = document.querySelector('.ticker-toggle');
+      const intro = document.querySelector('.intro-cutscene');
+      const skip = document.querySelector('.intro-skip');
+      const replay = document.querySelector('.intro-replay');
+      const heroTitle = document.querySelector('#hero-title');
+      const nav = document.querySelector('.main-nav');
+      const selector = nav.querySelector('.nav-selector');
+      const navLinks = [...nav.querySelectorAll('a')];
+      const navSections = navLinks.map(link => document.querySelector(link.hash));
+      const header = document.querySelector('.site-header');
+      const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+      const flourishes = new Map();
+      const background = [...document.querySelectorAll('.skip-link, .site-header, main, .site-footer')];
+      const introKey = 'ravioxx:intro:seen:v1';
+      const canIntro = typeof Element.prototype.animate === 'function' && 'inert' in HTMLElement.prototype;
+      const active = new Set();
+      let pausedByUser = false;
+      let observer;
+      let introState = null;
+      let heroStarted = false;
+      let portfolioStarted = false;
+      let hoveredLink = null;
+      let navigationFrame = 0;
+      let snapNavigation = false;
+      let arrivalFrame = 0;
+
+      function updateTicker() {
+        ticker.dataset.running = String(!preference.matches && !pausedByUser && !introState);
+        toggle.hidden = preference.matches;
+        toggle.textContent = pausedByUser ? 'Resume ticker' : 'Pause ticker';
+        toggle.setAttribute('aria-pressed', String(pausedByUser));
+        replay.hidden = preference.matches || !canIntro;
+      }
+
+      toggle.addEventListener('click', () => {
+        pausedByUser = !pausedByUser;
+        updateTicker();
+      });
+      updateTicker();
+
+      // Animate visible content without ever relying on a hidden CSS state.
+      // If animation or observation is unavailable, the static page stays usable.
+      function animate(element, frames, options = {}) {
+        if (!element || preference.matches || !element.animate) return;
+        try {
+          const effect = element.animate(frames, {
+            duration: 440, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards', ...options
+          });
+          active.add(effect);
+          effect.onfinish = effect.oncancel = () => active.delete(effect);
+          return effect;
+        } catch (_) { /* Leave the original, visible layout in place. */ }
+      }
+
+      function entrance(selector, delay, frames, duration = 440) {
+        animate(document.querySelector(selector), frames, { delay, duration });
+      }
+
+      function startHero() {
+        if (heroStarted) return;
+        heroStarted = true;
+        const slide = [{ opacity: 0, translate: '-24px 6px' }, { opacity: 1, translate: '0 0' }];
+        entrance('.hero-intro', 0, slide, 320);
+        entrance('.name-first', 60, slide);
+        entrance('.name-last', 140, slide);
+        entrance('.hero-mask', 180, [{ opacity: 0, scale: '.9' }, { opacity: .14, scale: '1' }], 480);
+        entrance('.identity-card', 240, [
+          { opacity: 0, translate: '18px 20px', rotate: '-7deg' },
+          { opacity: 1, translate: '0 0', rotate: '0deg' }
+        ], 500);
+        entrance('.art-star', 360, [{ opacity: 0, scale: '.6', rotate: '-18deg' }, { opacity: 1, scale: '1', rotate: '0deg' }], 350);
+        entrance('.card-stamp', 560, [
+          { opacity: 0, scale: '1.3', translate: '4px -8px' },
+          { opacity: 1, scale: '1', translate: '0 0' }
+        ], 340);
+      }
+
+      function startPortfolio() {
+        if (portfolioStarted) return;
+        portfolioStarted = true;
+        if (preference.matches || !('IntersectionObserver' in window)) return;
+        try {
+          observer = new IntersectionObserver(entries => {
+            entries.forEach(({ target, isIntersecting }) => {
+              if (!isIntersecting) return;
+              observer.unobserve(target);
+              const stagger = target.matches('.skill-card, .project-card, .project-row')
+                ? Array.from(target.parentElement.children).indexOf(target) * 80 : 0;
+              animate(target, [{ opacity: 0, translate: '0 16px' }, { opacity: 1, translate: '0 0' }], { delay: stagger });
+              if (target.matches('.skill-card')) {
+                animate(target.querySelector('.skill-track > span'), [{ scale: '0 1' }, { scale: '1 1' }], { duration: 640, delay: stagger + 80 });
+              }
+            });
+          }, { threshold: .12, rootMargin: '0px 0px -24px 0px' });
+          document.querySelectorAll('.section-heading, .about-story, .intel-card, .skill-card, .project-card, .project-row, .contact-title-wrap, .calling-card')
+            .forEach(element => observer.observe(element));
+        } catch (_) { /* Observation is an enhancement, never a content gate. */ }
+      }
+
+      // Every exit uses this cleanup, including errors and the safety deadline.
+      function finishIntro() {
+        const state = introState;
+        if (!state) return;
+        introState = null;
+        intro.hidden = true;
+        clearTimeout(state.deadline);
+        clearTimeout(state.heroTimer);
+        state.animations.forEach(effect => effect.cancel());
+        state.background.forEach(({ element, inert }) => { element.inert = inert; });
+        document.documentElement.classList.remove('intro-playing');
+        window.scrollTo(state.scroll.x, state.scroll.y);
+        (state.returnFocus.isConnected ? state.returnFocus : heroTitle).focus({ preventScroll: true });
+        startHero();
+        startPortfolio();
+        updateTicker();
+        queueNavigation(true);
+      }
+
+      function startIntro(isReplay = false) {
+        if (introState || preference.matches || !canIntro) return false;
+        const state = {
+          animations: new Set(),
+          background: background.map(element => ({ element, inert: element.inert })),
+          scroll: { x: window.scrollX, y: window.scrollY },
+          returnFocus: isReplay ? replay : heroTitle
+        };
+        introState = state;
+        // Register the deadline before making the page inert.
+        state.deadline = setTimeout(finishIntro, 4000);
+        try {
+          intro.hidden = false;
+          selector.hidden = true;
+          document.documentElement.classList.add('intro-playing');
+          state.background.forEach(({ element }) => { element.inert = true; });
+          skip.focus({ preventScroll: true });
+          updateTicker();
+          try { sessionStorage.setItem(introKey, '1'); } catch (_) { /* Storage is optional. */ }
+
+          // Keep finished intro effects until cleanup so Replay starts fresh.
+          const scene = (selector, frames, duration, delay = 0, easing = 'cubic-bezier(.2,.8,.2,1)') => {
+            const effect = intro.querySelector(selector).animate(frames, { duration, delay, easing, fill: 'both' });
+            state.animations.add(effect);
+            return effect;
+          };
+          scene('.intro-mask', [
+            { opacity: 0, scale: '.65', offset: 0 },
+            { opacity: 1, scale: '1', offset: .15 },
+            { opacity: .12, scale: '1.45', offset: .3 },
+            { opacity: .12, scale: '1.45', offset: .8 },
+            { opacity: 0, scale: '1.5', offset: 1 }
+          ], 2750, 0, 'linear');
+          ['.intro-panel-left', '.intro-panel-right'].forEach(selector => {
+            scene(`${selector} .intro-panel-fill`, [{ scale: '1 0' }, { scale: '1 1' }], 500, 450);
+          });
+          scene('.intro-card', [
+            { opacity: 0, translate: '-60px 24px', rotate: '8deg', offset: 0 },
+            { opacity: 1, translate: '0 0', rotate: '0deg', offset: .3 },
+            { opacity: 1, translate: '0 0', rotate: '0deg', offset: .88 },
+            { opacity: 0, translate: '0 -24px', rotate: '-2deg', offset: 1 }
+          ], 2200, 650, 'linear');
+          scene('.intro-stamp', [{ opacity: 0, scale: '1.5', rotate: '8deg' }, { opacity: 1, scale: '1', rotate: '0deg' }], 400, 1300);
+          scene('.intro-burst', [{ opacity: 0, scale: '.4', rotate: '-30deg' }, { opacity: 1, scale: '1', rotate: '0deg' }], 300, 1450);
+          scene('.intro-tagline', [{ opacity: 0, translate: '0 8px' }, { opacity: 1, translate: '0 0' }], 300, 1450);
+          scene('.intro-panel-left', [{ translate: '0 0' }, { translate: 'calc(-100vw - 100vh) 0' }], 600, 2400);
+          const curtain = scene('.intro-panel-right', [{ translate: '0 0' }, { translate: 'calc(100vw + 100vh) 0' }], 600, 2400);
+          curtain.addEventListener('finish', finishIntro, { once: true });
+          if (!isReplay) state.heroTimer = setTimeout(startHero, 2400);
+        } catch (_) {
+          finishIntro();
+        }
+        return true;
+      }
+
+      skip.addEventListener('click', finishIntro);
+      replay.addEventListener('click', () => startIntro(true));
+
+      // Section tracking is independent of the optional reveal observer.
+      function syncNavigation(snap = false) {
+        const threshold = header.getBoundingClientRect().bottom + 24;
+        let current = null;
+        navSections.forEach((section, index) => {
+          if (section.getBoundingClientRect().top <= threshold) current = navLinks[index];
+        });
+        const contact = navSections[navSections.length - 1].getBoundingClientRect();
+        if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2 && contact.top < window.innerHeight && contact.bottom > threshold) {
+          current = navLinks[navLinks.length - 1];
+        }
+        navLinks.forEach(link => {
+          if (link === current) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+
+        const focused = navLinks.find(link => link === document.activeElement && link.matches(':focus-visible'));
+        const target = focused || (finePointer.matches && hoveredLink) || current;
+        if (!target || introState) {
+          selector.hidden = true;
+          return;
+        }
+        const base = nav.getBoundingClientRect();
+        const rect = target.getBoundingClientRect();
+        const instant = snap || preference.matches || selector.hidden;
+        if (instant) selector.dataset.instant = '';
+        selector.style.translate = `${rect.left - base.left - nav.clientLeft - 2}px ${rect.top - base.top - nav.clientTop - 2}px`;
+        selector.style.width = `${rect.width + 4}px`;
+        selector.style.height = `${rect.height + 4}px`;
+        selector.hidden = false;
+        if (instant) {
+          // Commit resize/font corrections before allowing subsequent movement.
+          selector.getBoundingClientRect();
+          delete selector.dataset.instant;
+        }
+      }
+
+      function queueNavigation(snap = false) {
+        snapNavigation ||= snap;
+        if (navigationFrame) return;
+        navigationFrame = requestAnimationFrame(() => {
+          navigationFrame = 0;
+          const instant = snapNavigation;
+          snapNavigation = false;
+          syncNavigation(instant);
+        });
+      }
+
+      navSections.forEach(section => {
+        const heading = section.querySelector('h2');
+        const art = document.createElement('span');
+        art.className = 'arrival-flourish';
+        art.setAttribute('aria-hidden', 'true');
+        art.innerHTML = '<svg class="arrival-brackets" viewBox="0 0 100 40" preserveAspectRatio="none" focusable="false"><use href="#selection-brackets"/></svg><svg class="arrival-ink" viewBox="0 0 160 18" focusable="false"><use href="#ink-slash"/></svg>';
+        heading.append(art);
+      });
+
+      function flourish(section) {
+        if (preference.matches || introState) return;
+        const heading = section.querySelector('h2');
+        const art = heading.querySelector('.arrival-flourish');
+        flourishes.get(heading)?.forEach(effect => effect.cancel());
+        const effects = [
+          animate(art, [
+            { opacity: 0, translate: '-10px 0', offset: 0 },
+            { opacity: 1, translate: '0 0', offset: .25 },
+            { opacity: 1, translate: '0 0', offset: .7 },
+            { opacity: 0, translate: '4px 0', offset: 1 }
+          ], { duration: 260, easing: 'linear', fill: 'none' }),
+          animate(art.querySelector('.arrival-ink'), [{ scale: '0 1' }, { scale: '1 1' }], { duration: 180, fill: 'none' })
+        ].filter(Boolean);
+        if (!effects.length) return;
+        flourishes.set(heading, effects);
+        effects[0].addEventListener('finish', () => {
+          if (flourishes.get(heading) === effects) flourishes.delete(heading);
+        }, { once: true });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('pointerenter', event => {
+          if (event.pointerType !== 'mouse' || !finePointer.matches) return;
+          hoveredLink = link;
+          queueNavigation();
+        });
+        link.addEventListener('pointerleave', () => {
+          if (hoveredLink === link) hoveredLink = null;
+          queueNavigation();
+        });
+      });
+      ['focusin', 'focusout', 'keydown'].forEach(type => nav.addEventListener(type, () => queueNavigation()));
+      nav.addEventListener('click', event => {
+        const link = event.target.closest('a');
+        const index = navLinks.indexOf(link);
+        if (index < 0 || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        // Native fragment navigation runs first; only the latest selection gets a flourish.
+        cancelAnimationFrame(arrivalFrame);
+        arrivalFrame = requestAnimationFrame(() => {
+          queueNavigation();
+          flourish(navSections[index]);
+        });
+      });
+      window.addEventListener('scroll', () => queueNavigation(), { passive: true });
+      ['resize', 'hashchange', 'popstate', 'pageshow', 'load'].forEach(type => window.addEventListener(type, () => queueNavigation(true)));
+      document.fonts?.ready.then(() => queueNavigation(true));
+      if ('ResizeObserver' in window) {
+        const sizing = new ResizeObserver(() => queueNavigation(true));
+        [nav, ...navLinks].forEach(element => sizing.observe(element));
+      }
+      finePointer.addEventListener('change', () => { hoveredLink = null; queueNavigation(true); });
+      nav.dataset.enhanced = '';
+      queueNavigation(true);
+
+      document.addEventListener('keydown', event => {
+        if (!introState) return;
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          finishIntro();
+        } else if (event.key === 'Tab') {
+          event.preventDefault();
+          skip.focus({ preventScroll: true });
+        }
+      });
+
+      // Keyboard users should never focus content during a delayed entrance.
+      document.addEventListener('focusin', event => {
+        if (introState) {
+          if (!intro.contains(event.target)) skip.focus({ preventScroll: true });
+          return;
+        }
+        active.forEach(effect => {
+          if (effect.effect.target.contains(event.target)) effect.cancel();
+        });
+      });
+      preference.addEventListener('change', () => {
+        if (preference.matches) {
+          finishIntro();
+          active.forEach(effect => effect.cancel());
+          observer?.disconnect();
+          flourishes.clear();
+        }
+        updateTicker();
+        queueNavigation(true);
+      });
+
+      let seen = false;
+      try { seen = sessionStorage.getItem(introKey) === '1'; } catch (_) { /* Play once per load when storage is unavailable. */ }
+      const directSection = location.hash && location.hash !== '#home';
+      if (seen || directSection || !startIntro()) {
+        startHero();
+        startPortfolio();
+      }
+    })();
+  </script>
 </body>
 </html>
