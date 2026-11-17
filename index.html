@@ -3,271 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Dan Justine Rivero">
-  <title>Dan Justine // Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <meta name="description" content="Dan Justine Rivero — computer science student, future programmer, and the mind behind Ravioxx. Explore my skills and projects.">
+  <meta name="theme-color" content="#e41625">
+  <title>Dan Justine // The Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
 
-  <div class="noise"></div>
-
-  <!-- ══════════ HEADER ══════════ -->
-  <header>
-    <div class="hdr-grid">
-
-      <!-- Left: profile + name + center deco -->
-      <div class="hdr-left">
-        <div class="eyebrow">DAN JUSTINE RIVERO // PORTFOLIO</div>
-
-        <div class="profile-ring">
-          <img src="hi3.jpg" alt="Dan Justine Rivero" class="profile-img">
-        </div>
-
-        <h1 class="hero-name">DAN<br>JUSTINE</h1>
-
-        <div class="hdr-center-deco">
-          <div class="deco-item">
-            <span class="deco-label">CODENAME</span>
-            <span class="deco-val">RAVIOXX</span>
-          </div>
-          <div class="deco-item">
-            <span class="deco-label">ARCANA</span>
-            <span class="deco-val">THE MAGICIAN</span>
-          </div>
-          <div class="deco-item">
-            <span class="deco-label">ROLE</span>
-            <span class="deco-val">CS STUDENT</span>
-          </div>
-        </div>
-
-        <p class="hero-sub">Student &nbsp;&nbsp;|&nbsp;&nbsp; Future Programmer</p>
-      </div>
-
-      <!-- Right: red panel with stat list -->
-      <div class="hdr-right">
-        <div class="hdr-right-inner">
-          <div class="phantom-badge">THE PHANTOM</div>
-          <ul class="hdr-stats">
-            <li><span class="hs-label">SCHOOL</span><span class="hs-val">Lyceum of the Philippines</span></li>
-            <li><span class="hs-label">YEAR</span><span class="hs-val">2026 – Present</span></li>
-            <li><span class="hs-label">DEGREE</span><span class="hs-val">BS Computer Science</span></li>
-            <li><span class="hs-label">STATUS</span><span class="hs-val hs-active">● ACTIVE</span></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <nav class="main-nav">
-      <a href="#about"    class="nav-item"><em>01</em> ABOUT</a>
-      <a href="#skills"   class="nav-item"><em>02</em> SKILLS</a>
-      <a href="#projects" class="nav-item"><em>03</em> PROJECTS</a>
-      <a href="#contact"  class="nav-item"><em>04</em> CONTACT</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Ravioxx home"><span class="brand-mark">R<span>★</span></span> RAVIOXX<span class="wordmark-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about"><span>01</span> ABOUT</a>
+      <a href="#skills"><span>02</span> SKILLS</a>
+      <a href="#projects"><span>03</span> PROJECTS</a>
+      <a href="#contact"><span>04</span> CONTACT <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> A STUDENT WITH SOMETHING TO BUILD</p>
+          <p class="hero-intro">You can call me</p>
+          <h1 id="hero-title"><span class="name-first">DAN</span><span class="name-last">JUSTINE<span class="name-star" aria-hidden="true">★</span></span></h1>
+          <p class="hero-description">Computer science student. Future programmer.<br>Turning curiosity into code, one project at a time.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="cut-button">EXPLORE THE HEISTS <span aria-hidden="true">↘</span></a>
+            <a href="#about" class="text-link">MEET THE MIND <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
 
-    <!-- ══════════ ABOUT ══════════ -->
-    <section id="about" class="about-section">
-      <div class="about-sidebar">
-        <div class="sidebar-label">ABOUT</div>
-        <div class="sidebar-quote">
-          <div class="quote-bar"></div>
-          <blockquote>"The world is full of both justice and evil — but people can change it."</blockquote>
-          <p class="quote-src">— PERSONA 5 ROYAL</p>
+        <div class="hero-art">
+          <span class="art-star" aria-hidden="true">✦</span>
+          <div class="card-back" aria-hidden="true"></div>
+          <figure class="identity-card">
+            <div class="card-heading"><span>THE PERSON BEHIND THE CODE</span><span aria-hidden="true">↗</span></div>
+            <div class="portrait-wrap">
+              <img src="hi3.jpg" alt="Dan Justine Rivero looking out a window" width="200" height="200" class="portrait">
+              <div class="portrait-grain" aria-hidden="true"></div>
+              <span class="portrait-tag">CODENAME: RAVIOXX</span>
+            </div>
+            <figcaption>
+              <span class="card-name">DAN JUSTINE RIVERO</span>
+              <span class="card-role">BS COMPUTER SCIENCE <span aria-hidden="true">★</span> LPU CAVITE</span>
+            </figcaption>
+            <span class="card-stamp">THE<br>MAGICIAN</span>
+          </figure>
+          <span class="arcana-label">ARCANA I <span>///</span> A WORK IN PROGRESS</span>
         </div>
       </div>
-      <div class="about-body-wrap">
-        <div class="sec-eyebrow">CODENAME: RAVIOXX</div>
-        <h2 class="sec-title">WHO AM I</h2>
-        <p class="about-p">
-          Hi there! I'm <strong>Dan Justine Rivero</strong>, a CS student learning to code to my fullest.
-          This portfolio is a live example of my developing skills.
-        </p>
-        <div class="about-cols">
-          <div class="info-rows">
-            <div class="info-row">
-              <span class="ir-label">SCHOOL</span>
-              <span class="ir-dots"></span>
-              <span class="ir-val">Lyceum of the Philippines Cavite</span>
-            </div>
-            <div class="info-row">
-              <span class="ir-label">DEGREE</span>
-              <span class="ir-dots"></span>
-              <span class="ir-val">BS Computer Science</span>
-            </div>
-            <div class="info-row">
-              <span class="ir-label">YEAR</span>
-              <span class="ir-dots"></span>
-              <span class="ir-val">2026 – Present</span>
-            </div>
-            <div class="info-row">
-              <span class="ir-label">COURSES</span>
-              <span class="ir-dots"></span>
-              <span class="ir-val">Web Dev · DSA · OOP</span>
-            </div>
-          </div>
-          <div class="about-tags">
-            <div class="tag-label">ARSENAL</div>
-            <div class="tags-grid">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">PHP</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">MySQL</span>
-            </div>
-          </div>
+      <div class="hero-bottom"><span>BASED IN CURIOSITY. BUILT WITH CODE.</span><a href="#about">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="about" class="about-section section-shell" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-kicker"><span>01 / INTEL</span> GET TO KNOW ME</p>
+        <h2 id="about-title">BEHIND <span class="paper-word">THE MASK.</span></h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-story">
+          <p class="lead">A curious mind.<br><span>A programmer in progress.</span></p>
+          <p>Hi, I'm <strong>Dan Justine Rivero</strong>, a computer science student at Lyceum of the Philippines University, Cavite. I'm learning to turn ideas into things people can actually use.</p>
+          <p>From my first PHP website to Python applications, every project is a chance to experiment, figure things out, and get a little better. This portfolio is part of that journey.</p>
+          <blockquote><p>“The world is full of both justice and evil — but people can change it.”</p><cite>PERSONA 5 ROYAL <span aria-hidden="true">★</span> THE INSPIRATION</cite></blockquote>
         </div>
+        <aside class="intel-card" aria-label="Student profile">
+          <div class="intel-heading"><span>PERSONNEL FILE</span><span class="file-number">NO. 001</span></div>
+          <dl>
+            <div><dt>NAME</dt><dd>Dan Justine Rivero</dd></div>
+            <div><dt>CODENAME</dt><dd>Ravioxx</dd></div>
+            <div><dt>EDUCATION</dt><dd>BS Computer Science</dd></div>
+            <div><dt>SCHOOL</dt><dd>Lyceum of the Philippines<br>University, Cavite</dd></div>
+            <div><dt>YEAR</dt><dd>2026 – Present</dd></div>
+            <div><dt>FOCUS</dt><dd>Web Dev · DSA · OOP</dd></div>
+          </dl>
+          <div class="file-status"><span class="status-dot"></span> CURRENT STATUS: LEARNING & BUILDING</div>
+        </aside>
       </div>
     </section>
 
-    <!-- ══════════ SKILLS ══════════ -->
-    <section id="skills" class="skills-section">
-      <div class="skills-inner">
-        <div class="skills-heading">
-          <div class="sec-eyebrow">ARCANA: THE MAGICIAN</div>
-          <h2 class="sec-title">SKILL SET</h2>
-        </div>
-        <div class="skills-meters">
-          <div class="skill-row">
-            <span class="skill-name">HTML &amp; CSS</span>
-            <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
-            <span class="skill-lv">LV 8</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">PHP</span>
-            <div class="skill-track"><div class="skill-fill" style="width:55%"></div></div>
-            <span class="skill-lv">LV 5</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">Python</span>
-            <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
-            <span class="skill-lv">LV 5</span>
-          </div>
-          <div class="skill-row">
-            <span class="skill-name">MySQL</span>
-            <div class="skill-track"><div class="skill-fill" style="width:62%"></div></div>
-            <span class="skill-lv">LV 6</span>
-          </div>
-        </div>
+    <section id="skills" class="skills-section section-shell" aria-labelledby="skills-title">
+      <div class="section-heading skills-heading">
+        <div><p class="section-kicker"><span>02 / ARSENAL</span> TOOLS OF THE TRADE</p><h2 id="skills-title">MY <span class="outline-word">SKILL SET.</span></h2></div>
+        <p class="section-note">The tools I'm learning.<br>The skills I'm leveling up.</p>
       </div>
+      <div class="skill-grid">
+        <div class="skill-card"><span class="skill-index">01 / FRONTEND</span><div class="skill-name-row"><h3>HTML & CSS</h3><span class="skill-symbol" aria-hidden="true">&lt;/&gt;</span></div><div class="skill-track" role="img" aria-label="HTML and CSS: self-assessed level 8 of 10"><span style="--level:80%"></span></div><div class="skill-caption"><span>STRUCTURE & STYLE</span><span>LV. <b>08</b> / 10</span></div></div>
+        <div class="skill-card"><span class="skill-index">02 / BACKEND</span><div class="skill-name-row"><h3>PHP</h3><span class="skill-symbol" aria-hidden="true">{ }</span></div><div class="skill-track" role="img" aria-label="PHP: self-assessed level 5 of 10"><span style="--level:50%"></span></div><div class="skill-caption"><span>SERVER-SIDE LOGIC</span><span>LV. <b>05</b> / 10</span></div></div>
+        <div class="skill-card"><span class="skill-index">03 / APPLICATIONS</span><div class="skill-name-row"><h3>PYTHON</h3><span class="skill-symbol" aria-hidden="true">_&gt;</span></div><div class="skill-track" role="img" aria-label="Python: self-assessed level 5 of 10"><span style="--level:50%"></span></div><div class="skill-caption"><span>IDEAS INTO PROGRAMS</span><span>LV. <b>05</b> / 10</span></div></div>
+        <div class="skill-card"><span class="skill-index">04 / DATABASES</span><div class="skill-name-row"><h3>MYSQL</h3><span class="skill-symbol" aria-hidden="true">[≡]</span></div><div class="skill-track" role="img" aria-label="MySQL: self-assessed level 6 of 10"><span style="--level:60%"></span></div><div class="skill-caption"><span>CONNECTING THE DATA</span><span>LV. <b>06</b> / 10</span></div></div>
+      </div>
+      <p class="skill-disclaimer">Self-assessed levels. Always room for the next upgrade.</p>
     </section>
 
-    <!-- TAPE -->
     <div class="tape-divider" aria-hidden="true">
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
-      <span>◆ PHANTOM THIEVES OF HEARTS ◆ STEAL YOUR FUTURE ◆ RAVIOXX ◆ CHANGE THE WORLD ◆&nbsp;</span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
+      <span>BUILD SOMETHING DIFFERENT ★ STAY CURIOUS ★ CHANGE THE WORLD ★ RAVIOXX ★ </span>
     </div>
 
-    <!-- ══════════ PROJECTS ══════════ -->
-    <section id="projects" class="projects-section">
-      <div class="projects-heading">
-        <div class="sec-eyebrow">OPERATION FILES</div>
-        <h2 class="sec-title">THE HEISTS</h2>
+    <section id="projects" class="projects-section section-shell" aria-labelledby="projects-title">
+      <div class="section-heading projects-heading"><div><p class="section-kicker"><span>03 / OPERATION FILES</span> IDEAS IN ACTION</p><h2 id="projects-title">THE <span class="paper-word">HEISTS.</span></h2></div><p class="section-note">Experiments. Lessons. Finished projects.<br>Here's what I've been working on.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual visual-web" aria-hidden="true"><span class="visual-label">OPERATION 001</span><div class="browser-art"><div class="browser-bar"><span>● ● ●</span><span>localhost / first-build</span></div><div class="browser-body"><span class="code-line">&lt;?php</span><span class="code-main">HELLO,<br><em>WORLD.</em></span><span class="code-line">// every journey starts somewhere</span></div></div><span class="visual-corner">WEB DEVELOPMENT ↗</span></div>
+          <div class="project-body"><div class="project-meta"><span class="project-status">COMPLETE</span><span>PHP / MYSQL</span></div><h3>TRIAL WEBSITE</h3><p>My first full web project: a practice website connecting a PHP backend to a MySQL database.</p><a class="project-link" href="https://github.com/Ravioxx-Raviette/Database-Website.git" target="_blank" rel="noopener noreferrer">INSPECT THE CODE <span aria-hidden="true">↗</span><span class="sr-only"> for Trial Website (opens in a new tab)</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-fahad" aria-hidden="true"><span class="visual-label">OPERATION 002</span><div class="scan-art"><span class="scan-corner tl"></span><span class="scan-corner tr"></span><span class="scan-corner bl"></span><span class="scan-corner br"></span><span class="scan-word">REAL<span>OR NOT?</span></span><span class="scan-line"></span></div><span class="visual-corner">QUESTION WHAT YOU SEE ↗</span></div>
+          <div class="project-body"><div class="project-meta"><span class="project-status">COMPLETE</span><span>PYTHON / GUI</span></div><h3>FAHAD</h3><p>A deepfake media verification application built to examine what's real and what's manipulated.</p><a class="project-link" href="https://github.com/Ravioxx-Raviette/Fahad" target="_blank" rel="noopener noreferrer">INSPECT THE CODE <span aria-hidden="true">↗</span><span class="sr-only"> for FAHAD (opens in a new tab)</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-resume" aria-hidden="true"><span class="visual-label">OPERATION 003</span><div class="resume-art"><span class="resume-from">YOUR EXPERIENCE</span><span class="resume-arrow">↗</span><span class="resume-to">WHAT'S<br>NEXT?</span></div><span class="visual-corner">CONNECTING THE POSSIBILITIES ↗</span></div>
+          <div class="project-body"><div class="project-meta"><span class="project-status">COMPLETE</span><span>PYTHON / GUI</span></div><h3>RESUMEBRIDGE</h3><p>An AI-powered career counseling platform connecting candidate experience with future opportunities.</p><a class="project-link" href="https://github.com/Ravioxx-Raviette/ResumeBridge" target="_blank" rel="noopener noreferrer">INSPECT THE CODE <span aria-hidden="true">↗</span><span class="sr-only"> for ResumeBridge (opens in a new tab)</span></a></div>
+        </article>
       </div>
-      <div class="proj-featured">
-        <div class="pfeat-num">01</div>
-        <div class="pfeat-body">
-          <div class="proj-meta">
-            <span class="proj-status active">COMPLETE</span>
-            <span class="proj-tech">PHP · MySQL</span>
-          </div>
-          <h3 class="proj-title">Trial Website</h3>
-          <p class="proj-desc">A practice website built using PHP — my first full web project integrating a backend database.</p>
-          <a href="https://github.com/Ravioxx-Raviette/Database-Website.git" target="_blank" class="p5-btn">
-            OPEN REPO <i class="ri-arrow-right-up-line"></i>
-          </a>
-        </div>
-        <div class="pfeat-icon"><i class="ri-github-fill"></i></div>
+      <div class="project-list">
+        <article class="project-row"><span class="row-number">04</span><div class="row-title"><span class="project-type">PYTHON / GUI</span><h3>STUDENT SYSTEM</h3><p>A student management system with a graphical interface.</p></div><span class="row-status">COMPLETE</span><a href="https://github.com/Ravioxx-Raviette/Student-System.git" target="_blank" rel="noopener noreferrer" class="row-link" aria-label="View Student System repository (opens in a new tab)">↗</a></article>
+        <article class="project-row"><span class="row-number">05</span><div class="row-title"><span class="project-type">PHP / GUI</span><h3>CALCULATOR</h3><p>Two calculators with a custom graphical user interface.</p></div><span class="row-status status-local">LOCAL PROJECT</span><span class="row-local" aria-label="Repository not available">—</span></article>
       </div>
-      <div class="proj-featured">
-  <div class="pfeat-num">02</div>
-  <div class="pfeat-body">
-    <div class="proj-meta">
-      <span class="proj-status active">COMPLETE</span>
-      <span class="proj-tech">Python · GUI</span>
-    </div>
-    <h3 class="proj-title">FAHAD</h3>
-    <p class="proj-desc">A deepfake media verification application.</p>
-    <a href="https://github.com/Ravioxx-Raviette/Fahad" target="_blank" class="p5-btn">
-      OPEN REPO <i class="ri-arrow-right-up-line"></i>
-    </a>
-  </div>
-  <div class="pfeat-icon"><i class="ri-github-fill"></i></div>
-</div>
-<div class="proj-featured">
-  <div class="pfeat-num">03</div>
-  <div class="pfeat-body">
-    <div class="proj-meta">
-      <span class="proj-status active">COMPLETE</span>
-      <span class="proj-tech">Python · GUI</span>
-    </div>
-    <h3 class="proj-title">ResumeBridge</h3>
-    <p class="proj-desc"> an AI-powered career counseling platform designed to bridge the gap between candidate experience and future career opportunities.</p>
-    <a href="https://github.com/Ravioxx-Raviette/ResumeBridge" target="_blank" class="p5-btn">
-      OPEN REPO <i class="ri-arrow-right-up-line"></i>
-    </a>
-  </div>
-  <div class="pfeat-icon"><i class="ri-github-fill"></i></div>
-</div>
-      <div class="proj-pair">
-        <div class="proj-card">
-          <div class="proj-num">02</div>
-          <div class="proj-meta">
-            <span class="proj-status active">COMPLETE</span>
-            <span class="proj-tech">Python · GUI</span>
-          </div>
-          <h3 class="proj-title">Student System</h3>
-          <p class="proj-desc">A student management system with a graphical interface.</p>
-          <a href="https://github.com/Ravioxx-Raviette/Student-System.git" target="_blank" class="p5-btn">
-            OPEN REPO <i class="ri-arrow-right-up-line"></i>
-          </a>
-        </div>
-        <div class="proj-card">
-          <div class="proj-num">03</div>
-          <div class="proj-meta">
-            <span class="proj-status local">LOCAL</span>
-            <span class="proj-tech">PHP · GUI</span>
-          </div>
-          <h3 class="proj-title">Calculator</h3>
-          <p class="proj-desc">Two calculators with a custom graphical user interface.</p>
-          <span class="p5-btn disabled">NOT DEPLOYED</span>
-        </div>
-      </div>
+      <a class="github-link" href="https://github.com/Ravioxx-Raviette" target="_blank" rel="noopener noreferrer">MORE FROM RAVIOXX ON GITHUB <span aria-hidden="true">↗</span></a>
     </section>
 
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="contact-inner">
+        <div class="contact-title-wrap"><p class="section-kicker"><span>04 / THE NEXT CHAPTER</span> LET'S CONNECT</p><h2 id="contact-title">GOT AN IDEA?<br><span>LET'S TALK.</span><span class="contact-star" aria-hidden="true">★</span></h2><p>A question, a project, or just a hello.<br>My inbox is open.</p></div>
+        <div class="calling-card"><span class="calling-label">THIS IS YOUR CALLING CARD.</span><span class="calling-star" aria-hidden="true">✦</span><h3>MAKE<br>CONTACT.</h3><a class="email-link" href="mailto:riverodanjustine@gmail.com">riverodanjustine@gmail.com <span aria-hidden="true">↗</span></a><a class="phone-link" href="tel:+639613966038">+63 961 396 6038 <span aria-hidden="true">↗</span></a><span class="calling-signature">YOURS TRULY, RAVIOXX.</span></div>
+      </div>
+    </section>
   </main>
 
-  <!-- ══════════ FOOTER ══════════ -->
-  <footer id="contact">
-    <div class="footer-left">
-      <div class="sec-eyebrow">SEND A MESSAGE</div>
-      <h2 class="sec-title">CONTACT</h2>
-      <div class="contact-list">
-        <a href="mailto:riverodanjustine@gmail.com" class="contact-row">
-          <i class="ri-mail-fill"></i>
-          <span>riverodanjustine@gmail.com</span>
-          <i class="ri-arrow-right-up-line contact-arrow"></i>
-        </a>
-        <div class="contact-row">
-          <i class="ri-phone-fill"></i>
-          <span>+63 961 396 6038</span>
-        </div>
-      </div>
-      <p class="footer-copy">© 2024 Ravioxx · All rights reserved.</p>
-    </div>
-    <div class="footer-right">
-      <div class="footer-big-text">RAVIOXX</div>
-      <div class="footer-slash-deco"></div>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><span>© 2026 RAVIOXX</span><span>BUILT WITH CURIOSITY. INSPIRED BY PERSONA 5.</span><a href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
